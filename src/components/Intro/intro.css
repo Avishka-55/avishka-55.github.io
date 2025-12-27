@@ -56,21 +56,18 @@
     height: 1rem;
 }
 
-@media screen and (max-width:840px) {
-    .bg {
-        right: -10vw
-    }
-    .introContent {
-        font-size: 10vw;
-    }
-    .hello {
-        font-size: 4.5vw;
-    }
-    
-}
+@media screen and (max-width: 840px) {
+  .bg {
+    display: none;
+  }
 
-@media screen and (max-width:480px) {
-    .bg {
-        right: -20vw
-    }
+  .introContent {
+    font-size: 7.5vw;
+  }
+
+  .hello {
+    font-size: 5.5vw;
+  }
+
+  
 }

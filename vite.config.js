@@ -6,12 +6,8 @@ export default defineConfig({
   plugins: [
     react(),
     legacy({
-      targets: ['defaults', 'not IE 11']
+      targets: ['defaults'],
+      modernPolyfills: true
     })
-  ],
-  server: {
-    host: '0.0.0.0',
-    port: 5173,
-    strictPort: true
-  }
+  ]
 })

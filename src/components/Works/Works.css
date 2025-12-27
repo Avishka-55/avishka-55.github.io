@@ -1,0 +1,108 @@
+#works {
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.worksTitle {
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.worksDesc {
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 45rem;
+    margin-bottom: 2rem;
+    color: #aaa;
+}
+
+.worksImgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Project Card */
+
+.projectCard {
+    position: relative;
+    width: 18rem;
+    height: 20rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.worksImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+/* Hover overlay */
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.projectCard:hover .overlay {
+    opacity: 1;
+}
+
+.projectCard:hover .worksImg {
+    transform: scale(1.1);
+    filter: brightness(0.4);
+}
+
+/* Button */
+
+.workBtn {
+    margin-top: 2rem;
+    padding: 0.7rem 3rem;
+    border: none;
+    border-radius: 2rem;
+    background: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+@media (hover: none) {
+  .overlay {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2), transparent);
+    justify-content: flex-end;
+  }
+
+  .overlay h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .overlay p {
+    font-size: 0.8rem;
+    color: #ddd;
+  }
+
+  .projectCard:hover .worksImg {
+    transform: none;
+    filter: none;
+  }
+}

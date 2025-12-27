@@ -1,0 +1,60 @@
+#education {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.eduTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.eduDesc {
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 51rem;
+    padding: 0 2rem;
+}
+
+.eduBars {
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+
+.eduBar {
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+}
+
+.eduBarText > p {
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+@media screen and (max-width:720px) {
+    .eduBarText > p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .eduBarText > p {
+        font-size: 3vw;
+    }
+
+    .eduBarText > h2 {
+        font-size: 5vw;
+    }
+}

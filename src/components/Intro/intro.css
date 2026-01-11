@@ -1,9 +1,9 @@
 #intro {
-    height: calc(100vh - 4rem);
+    height: calc(100vh - 3rem);
     width: 100vw;
     max-width: 75rem;
     margin: 0 auto;
-    
+    overflow: hidden;
     position: relative;
 }
 .mobileAvatar {
@@ -40,9 +40,11 @@
 }
 
 .introPara {
+  
     font-size: medium;
     font-weight: 300;
     letter-spacing: 1px;
+    padding-top: 6px;
 }
 .typeText {
   color: #00f5ff;
@@ -50,8 +52,9 @@
 }
 
 .btn {
+    
     background: white;
-    margin: 1rem 0;
+    margin: 2rem 0;
     padding: 0.7rem 0.7rem;
     border: none;
     border-radius: 2rem;
@@ -74,8 +77,8 @@
     font-size: 7.5vw;
     align-items: flex-start;   
     text-align: left;
-    min-height: calc(100vh - 4rem);
-    padding-top: 1rem;
+    min-height: 100vh;
+    padding-top: 2rem;
   }
 
   .hello {

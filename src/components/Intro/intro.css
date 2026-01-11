@@ -1,9 +1,9 @@
 #intro {
-    
     height: calc(100vh - 4rem);
     width: 100vw;
     max-width: 75rem;
     margin: 0 auto;
+    
     position: relative;
 }
 .mobileAvatar {
@@ -20,7 +20,7 @@
 }
 
 .introContent {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     padding: 2rem;
     font-size: 3rem;
@@ -85,8 +85,8 @@
 .mobileAvatar {
   margin-top: -0.5rem;
   display: block;
-  width: clamp(110px, 55vw, 150px);
-  height: clamp(110px, 55vw, 150px);
+  width: clamp(120px, 40vw, 180px);
+  height: clamp(120px, 40vw, 180px);
   border-radius: 50%;
   object-fit: cover;
   object-position: center 10%;

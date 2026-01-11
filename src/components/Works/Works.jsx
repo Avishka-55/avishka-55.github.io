@@ -61,6 +61,8 @@ const Works = () => {
             <div className="overlay">
               <h3>{p.title}</h3>
               <p>{p.desc}</p>
+              <span className="liveTag">Live ↗</span>
+
             </div>
           </a>
         ))}

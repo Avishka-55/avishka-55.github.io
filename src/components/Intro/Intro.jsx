@@ -44,7 +44,7 @@ const Intro = () => {
               From clean UI to CI/CD pipelines  I ship production-ready systems.
             </p>
 
-            <Link to="contact" smooth={true} duration={500}>
+            <Link to="contact" smooth={true} duration={500} offset={-100} >
               <button className="btn">
                 <img src={btnImg} alt="Hire Me" className='btnImg'/>
                 Let’s Connect 🚀

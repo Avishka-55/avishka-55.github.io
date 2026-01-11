@@ -18,9 +18,17 @@ function NavBar() {
             
 
          </div>
-          <button className="desktopMenuBtn" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
-            <img src={contactImg} alt="" className="desktopMenuImg" />Contact Me
-          </button>
+           <Link
+              to="contact"
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="desktopMenuBtn"
+            >
+              <img src={contactImg} alt="" className="desktopMenuImg" />
+              Contact Me
+          </Link>
+
           <img src={menu} alt="Menu" className='mobMenu' onClick={()=>setShowMenu(!showMenu)} />
           <div className="navMenu" style={showMenu ? {display: 'flex'} : {display: 'none'}}>
             <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>Home</Link>

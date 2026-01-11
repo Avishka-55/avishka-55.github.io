@@ -54,7 +54,7 @@
 .btn {
     
     background: white;
-    margin: 2rem 0;
+    margin: 1rem 0;
     padding: 0.7rem 0.7rem;
     border: none;
     border-radius: 2rem;
@@ -80,11 +80,9 @@
     min-height: 100vh;
     padding-top: 2rem;
   }
-  .introPara{
-    margin-top: 1rem;
-  }
+ 
   .hello {
-    transform: translateY(-0.5rem);
+    
     font-size: 6.5vw;
   }
 

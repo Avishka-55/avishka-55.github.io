@@ -78,7 +78,7 @@
     align-items: flex-start;   
     text-align: left;
     min-height: 100vh;
-    padding-top: 2rem;
+    
   }
  
   .hello {
@@ -89,8 +89,8 @@
 .mobileAvatar {
   transform: translateY(-3.5rem);
   display: block;
-  width: clamp(120px, 40vw, 180px);
-  height: clamp(120px, 40vw, 180px);
+  width: clamp(120px, 50vw, 180px);
+  height: clamp(120px, 50vw, 180px);
   border-radius: 50%;
   object-fit: cover;
   object-position: center 10%;

@@ -6,6 +6,9 @@
     overflow: hidden;
     position: relative;
 }
+.mobileAvatar {
+  display: none;
+}
 
 .bg {
     position: absolute;
@@ -41,6 +44,10 @@
     font-weight: 300;
     letter-spacing: 1px;
 }
+.typeText {
+  color: #00f5ff;
+  font-weight: 600;
+}
 
 .btn {
     background: white;
@@ -56,18 +63,32 @@
     height: 1rem;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 720px) {
   .bg {
     display: none;
   }
 
   .introContent {
     font-size: 7.5vw;
+    align-items: flex-start;   
+    text-align: left;
   }
 
   .hello {
     font-size: 5.5vw;
   }
 
-  
+  .mobileAvatar {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position:center 10%;
+    margin-bottom: 1rem;
+    border: 3px solid #00f5ff;
+    box-shadow: 0 0 15px rgba(0,245,255,0.5);
+    align-self: center;        /* 👈 only avatar centered */
+  }
 }
+

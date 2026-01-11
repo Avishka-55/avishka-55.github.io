@@ -80,13 +80,16 @@
     min-height: 100vh;
     padding-top: 2rem;
   }
-
+  .introPara{
+    margin-top: 1rem;
+  }
   .hello {
-    font-size: 5.5vw;
+    transform: translateY(-0.5rem);
+    font-size: 6.5vw;
   }
 
 .mobileAvatar {
-  margin-top: -0.5rem;
+  transform: translateY(-3.5rem);
   display: block;
   width: clamp(120px, 40vw, 180px);
   height: clamp(120px, 40vw, 180px);

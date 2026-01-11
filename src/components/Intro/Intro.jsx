@@ -41,7 +41,7 @@ const Intro = () => {
             <p className="introPara">
               I build fast, secure, scalable web apps and automate cloud infrastructure.
               <br/>
-              From clean UI to CI/CD pipelines — I ship production-ready systems.
+              From clean UI to CI/CD pipelines  I ship production-ready systems.
             </p>
 
             <Link to="contact" smooth={true} duration={500}>

@@ -24,7 +24,7 @@ const projects = [
     img: p3,
     title: "Portfolio Website",
     desc: "React personal portfolio",
-    link: "https://yourproject3.com"
+    link: "https://wmavishka.me"
   },
   {
     img: p4,

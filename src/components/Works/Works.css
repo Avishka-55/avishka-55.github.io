@@ -34,7 +34,7 @@
 .projectCard {
     position: relative;
     width: 18rem;
-    height: 20rem;
+    height: 18rem;
     border-radius: 1rem;
     overflow: hidden;
     cursor: pointer;
@@ -79,7 +79,9 @@
   pointer-events: none;
 }
 
-
+.overlay p{
+  font-size: 12px;
+}
 .projectCard:hover .overlay {
     opacity: 1;
 }

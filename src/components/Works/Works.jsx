@@ -10,41 +10,42 @@ import p6 from '../../assets/portfolio-6.png'
 const projects = [
   {
     img: p1,
-    title: "Chat Application",
-    desc: "Real-time chat app with auth & sockets",
-    link: "https://yourproject1.com"
+    title: "ChatNest — Real-Time Chat App",
+    desc: "Real-time messaging app with authentication, sockets, and modern UI.",
+    link: "https://chatnest-12.netlify.app/"
   },
   {
     img: p2,
-    title: "Cloud Deployed API",
-    desc: "Node.js API deployed on VPS with SSL",
-    link: "https://yourproject2.com"
+    title: "Authenticator — MERN Auth App",
+    desc: "Full-stack MERN authentication system with secure login, email verify and password reset option",
+    link: "https://mern-auth-123.netlify.app/"
   },
   {
     img: p3,
-    title: "Portfolio Website",
-    desc: "React personal portfolio",
-    link: "https://yourproject3.com"
+    title: "Personal Portfolio Website",
+    desc: "Responsive personal portfolio built with React and modern UI design.",
+    link: "https://wmavishka.me"
   },
   {
     img: p4,
-    title: "E-Commerce App",
-    desc: "Full-stack shopping platform",
-    link: "https://yourproject4.com"
+    title: "Gemini AI Chat Application",
+    desc: "AI-powered chat application built using the Gemini API.",
+    link: "https://gemini-chatbot-private.netlify.app/"
   },
   {
     img: p5,
-    title: "DevOps Automation",
-    desc: "CI/CD pipeline with Docker",
-    link: "https://yourproject5.com"
+    title: "YouView — YouTube Clone",
+    desc: "YouTube-style video platform using the YouTube Data API.",
+    link: "https://youview-private.netlify.app/"
   },
   {
     img: p6,
-    title: "AI Web Tool",
-    desc: "AI powered SaaS web app",
-    link: "https://yourproject6.com"
+    title: "OUSL GPA Calculator",
+    desc: "Automated GPA calculator for OUSL students based on official result sheets.",
+    link: "https://avishka-55.github.io/OUSL-GPA-Calculator"
   },
-]
+];
+
 
 const Works = () => {
   return (
@@ -61,7 +62,7 @@ const Works = () => {
             <div className="overlay">
               <h3>{p.title}</h3>
               <p>{p.desc}</p>
-              <span className="liveTag">Live ↗</span>
+              <span className="liveTag">Live Link↗</span>
 
             </div>
           </a>

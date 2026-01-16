@@ -105,23 +105,38 @@
 @media (hover: none) {
   .overlay {
     opacity: 1;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2), transparent);
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.15)
+    );
+
     justify-content: flex-end;
+    padding-bottom: 1.2rem;
   }
 
   .overlay h3 {
     font-size: 1rem;
-    margin-bottom: 0.25rem;
+    font-weight: 600;
+    color: #fff;
   }
 
   .overlay p {
-    font-size: 0.8rem;
-    color: #ddd;
+    font-size: 0.85rem;
+    color: #eaeaea;
   }
 
- .projectCard:hover .overlay {
-  opacity: 1;
-  transform: translateY(0);
+  .liveTag {
+    background: rgba(0, 245, 255, 0.15);
+    border-color: rgba(0, 245, 255, 0.7);
+    color: #00f5ff;
+  }
+
+  /* Kill hover transform on touch devices */
+  .projectCard:hover .worksImg {
+    transform: none;
+    filter: none;
+  }
 }
 
-}

@@ -10,7 +10,10 @@ const Intro = () => {
   return (
     <section id="intro">
         <div className="introContent">
-            <img src={bg} alt="Me" className="mobileAvatar" />
+                <div className="avatarWrap">
+        <img src={bg} alt="Me" className="mobileAvatar" />
+      </div>
+
 
             <span className="hello">Hey there 👋</span>
 

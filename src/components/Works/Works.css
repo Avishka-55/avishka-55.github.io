@@ -26,7 +26,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 0; /* kill gap for mobile */
 }
 
 /* Project Card */
@@ -38,7 +38,9 @@
     border-radius: 1rem;
     overflow: hidden;
     cursor: pointer;
+    margin: 0.5rem; /* use margin instead of gap */
 }
+
 .worksImg {
   width: 100%;
   height: 100%;
@@ -61,8 +63,6 @@
   text-transform: uppercase;
 }
 
-
-
 .overlay {
   position: absolute;
   inset: 0;
@@ -82,6 +82,7 @@
 .overlay p{
   font-size: 12px;
 }
+
 .projectCard:hover .overlay {
     opacity: 1;
 }
@@ -102,6 +103,7 @@
     font-size: 1rem;
     cursor: pointer;
 }
+
 @media (hover: none) {
   .overlay {
     opacity: 1;
@@ -133,10 +135,9 @@
     color: #00f5ff;
   }
 
-  /* Kill hover transform on touch devices */
+  
   .projectCard:hover .worksImg {
     transform: none;
     filter: none;
   }
 }
-

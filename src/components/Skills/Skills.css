@@ -116,12 +116,15 @@
 @media (max-width: 900px) {
   .skillsGrid {
     flex-direction: column;
-    gap: 2rem !important; /* force the gap even if Facebook browser is being weird */
-    row-gap: 2rem; /* explicit row-gap for mobile */
+    gap: 0; /* kill the gap completely */
   }
   
   .skillCard {
-    margin-bottom: 0; /* reset any margins */
+    margin-bottom: 2rem !important; /* use margin instead - more reliable */
+  }
+  
+  .skillCard:last-child {
+    margin-bottom: 0 !important; /* no margin on last one */
   }
 }
 
@@ -135,8 +138,11 @@
     height: 45px;
   }
   
-  .skillsGrid {
-    gap: 1.5rem !important;
-    row-gap: 1.5rem;
+  .skillCard {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .skillCard:last-child {
+    margin-bottom: 0 !important;
   }
 }

@@ -1,4 +1,3 @@
-
 #skills {
   width: 100%;
   padding: 2rem 0 4rem; 
@@ -25,9 +24,6 @@
   text-align: center;
 }
 
-
-
-
 .skillTitle {
   font-size: 3rem;
   font-weight: 600;
@@ -41,8 +37,6 @@
   opacity: 0.9;
 }
 
-
-
 .skillsGrid {
   margin-top: 2.5rem;
   width: 100%;
@@ -50,8 +44,6 @@
   gap: 2rem;
   contain: layout;
 }
-
-
 
 .skillCard {
   flex: 1;
@@ -65,10 +57,8 @@
 
   overflow: hidden;
 
-
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
-
 
   contain: paint;
   transition: box-shadow 0.2s ease;
@@ -77,8 +67,6 @@
 .skillCard:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
 }
-
-
 
 .skillCard h2 {
   font-size: 1.5rem;
@@ -89,8 +77,6 @@
   font-weight: 300;
   opacity: 0.85;
 }
-
-
 
 .iconSwitcher {
   position: relative;
@@ -113,12 +99,9 @@
   animation: iconFade 9s infinite ease-in-out;
 }
 
-/* stagger */
 .iconSwitcher .i1 { animation-delay: 0s; }
 .iconSwitcher .i2 { animation-delay: 3s; }
 .iconSwitcher .i3 { animation-delay: 6s; }
-
-/* ===== CHEAP ANIMATION ===== */
 
 @keyframes iconFade {
   0%   { opacity: 0; transform: translate3d(-50%, 0, 0) scale(0.85); }
@@ -133,6 +116,12 @@
 @media (max-width: 900px) {
   .skillsGrid {
     flex-direction: column;
+    gap: 2rem !important; /* force the gap even if Facebook browser is being weird */
+    row-gap: 2rem; /* explicit row-gap for mobile */
+  }
+  
+  .skillCard {
+    margin-bottom: 0; /* reset any margins */
   }
 }
 
@@ -144,5 +133,10 @@
   .iconSwitcher .icon {
     width: 45px;
     height: 45px;
+  }
+  
+  .skillsGrid {
+    gap: 1.5rem !important;
+    row-gap: 1.5rem;
   }
 }

@@ -22,7 +22,7 @@
 }
 
 .works-title {
- font-size: 3rem;
+  font-size: 3rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
@@ -91,6 +91,7 @@
 .project-card:hover .project-image {
   filter: brightness(1);
 }
+
 .image-overlay {
   position: absolute;
   inset: 0;
@@ -358,15 +359,15 @@
 @media (max-width: 900px) {
   .projects-grid {
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: 0; /* kill gap completely */
   }
   
   .project-card {
-    margin-bottom: 2rem !important;
+    margin-bottom: 2rem !important; /* use margin instead - more reliable */
   }
   
   .project-card:last-child {
-    margin-bottom: 0 !important;
+    margin-bottom: 0 !important; /* no margin on last one */
   }
 
   .expanded-content {

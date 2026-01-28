@@ -18,10 +18,8 @@ const Education = () => {
           <span className="eduYear">2022 – 2026</span>
 
           <p>
-            Strong foundation in programming, databases, software engineering,
-            networking, operating systems, and cloud technologies. Actively
-            building real-world skills in Full-Stack Development, Linux,
-            Networking, Cloud, and DevOps.
+            B.Sc. Major in Computer Science at The Open University of Sri Lanka (OUSL).
+            Built a strong foundation in programming, databases, software engineering, computer networks, operating systems, and cloud computing. Actively developing hands-on experience in full-stack development, Linux systems, networking, cloud infrastructure, and DevOps through real-world projects.
           </p>
         </div>
       </div>

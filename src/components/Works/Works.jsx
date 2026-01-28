@@ -10,28 +10,53 @@ import p6 from '../../assets/portfolio-6.png';
 const projects = [
   {
     img: p1,
-    title: "ChatNest — Real-Time Chat App",
-    shortDesc: "Real-time messaging with sockets",
-    fullDesc: "Built a full-stack real-time messaging application featuring WebSocket connections, JWT authentication, message encryption, and a modern responsive UI. Supports group chats, file sharing, and online status indicators.",
-    tech: ["React", "Node.js", "Socket.io", "MongoDB", "JWT"],
+    title: "ChatNest  Real-Time Chat Application",
+    shortDesc: "Real time chat app with Docker & AWS deployment",
+    fullDesc:
+      "ChatNest is a full-stack real time messaging application built with the MERN stack and WebSockets. The application is fully containerized using Docker, deployed on AWS EC2, and served through an Nginx reverse proxy. A CI/CD pipeline powered by GitHub Actions automatically builds, tests, and deploys the application on every production update. Features include JWT-based authentication, real-time messaging with Socket.io, secure API handling, and a modern responsive UI.",
+    tech: [
+      "React",
+      "Node.js",
+      "Socket.io",
+      "MongoDB",
+      "Docker",
+      "AWS EC2",
+      "Nginx",
+      "GitHub Actions",
+      "JWT"
+    ],
     link: "https://chatnest-12.netlify.app/",
     github: "https://github.com/Avishka-55/Chat-Nest"
   },
-  {
+
+    {
     img: p2,
-    title: "Authenticator — MERN Auth App",
-    shortDesc: "Full-stack authentication system",
-    fullDesc: "Complete MERN stack authentication with bcrypt password hashing, email verification via nodemailer, JWT refresh tokens, password reset functionality, and protected routes. Includes admin dashboard.",
-    tech: ["MongoDB", "Express", "React", "Node.js", "Nodemailer"],
+    title: "Authenticator — MERN Authentication System",
+    shortDesc: "Secure MERN authentication with Docker & AWS deployment",
+    fullDesc:
+      "Authenticator is a full-stack MERN authentication system designed with security and scalability in mind. The application is containerized using Docker and deployed on an AWS EC2 instance, with Nginx configured as a reverse proxy for handling client requests and API routing. It implements industry-standard authentication flows including bcrypt-based password hashing, JWT access and refresh tokens, password reset functionality, protected routes.",
+    tech: [
+      "MongoDB",
+      "Express",
+      "React",
+      "Node.js",
+      "Docker",
+      "AWS EC2",
+      "Nginx",
+      "JWT",
+      "bcrypt"
+      
+    ],
     link: "https://mern-auth-123.netlify.app/",
     github: "https://github.com/Avishka-55/mern-authonication"
   },
+
   {
     img: p3,
     title: "Personal Portfolio Website",
     shortDesc: "Responsive portfolio with React",
     fullDesc: "Modern personal portfolio showcasing projects, skills, and experience. Features smooth animations, contact form integration, and fully responsive design optimized for all devices.",
-    tech: ["React", "CSS3", "Framer Motion", "EmailJS"],
+    tech: ["React", "CSS3", "EmailJS"],
     link: "https://wmavishka.me",
     github: "https://github.com/Avishka-55/avishka-55.github.io"
   },
@@ -58,7 +83,7 @@ const projects = [
     title: "OUSL GPA Calculator",
     shortDesc: "GPA calculator for OUSL students",
     fullDesc: "Automated GPA calculation tool specifically designed for Open University of Sri Lanka students. Parses official result sheets, handles different credit systems, and generates detailed grade reports.",
-    tech: ["JavaScript", "HTML5", "CSS3", "PDF.js"],
+    tech: ["JavaScript", "HTML5", "CSS3"],
     link: "https://avishka-55.github.io/OUSL-GPA-Calculator",
     github: "https://github.com/Avishka-55/OUSL-GPA-Calculator"
   },
